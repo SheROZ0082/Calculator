@@ -15,8 +15,9 @@
         android:textColor="@color/black"
         android:textSize="24sp"
         android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/zero"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/zero"
@@ -33,15 +34,12 @@
 
     <LinearLayout
         android:id="@+id/main_liner"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="320dp"
-        android:layout_marginEnd="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        tools:layout_editor_absoluteX="0dp">
+        app:layout_constraintStart_toStartOf="parent">
 
         <LinearLayout
             android:id="@+id/container1"
@@ -54,7 +52,7 @@
                 android:layout_marginStart="34dp"
                 android:gravity="center_horizontal"
                 android:onClick="onOperationClick"
-                android:text="AC" />
+                android:text="A" />
 
             <Button
                 android:id="@+id/btn_backspace"
@@ -189,10 +187,11 @@
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="320dp"
+        android:layout_marginBottom="6dp"
         android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@id/main_liner">
 
         <Button
