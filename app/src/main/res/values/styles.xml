@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="OperationButton">
+        <item name="android:layout_width">62dp</item>
+        <item name="android:layout_height">62dp</item>
+        <item name="android:background">@drawable/btn_background</item>
+        <item name="android:textSize">28sp</item>
+    </style>
+
+    <style name="DigitButton">
+        <item name="android:layout_width">62dp</item>
+        <item name="android:layout_height">62dp</item>
+        <item name="android:background">@drawable/btn_third_background</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@color/btn_third_text_color</item>
+    </style>
+</resources>
